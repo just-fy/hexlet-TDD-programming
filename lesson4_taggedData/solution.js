@@ -17,8 +17,6 @@ const run = (player1, player2, cards, customRandom) => {
     let cardName;
     let damage;
 
-    // Populate cardName and damage using suitable card
-    // use imports from  percentCard.js and simpleCard.js
     // BEGIN (write your solution here)
     if (isSimpleCard(card)) {
       cardName = getSimpleCardName(card);
