@@ -6,12 +6,12 @@ import { attach } from './type';
 const defmethod = definer('SimpleCard'); // получили тип карты
 
 const make = (name, health) =>
-  attach('SimpleCard', cons(name, health)); // создали простую карту 
+  attach('SimpleCard', cons(name, health));
 
-export default make; // и экспортировали ее
+export default make;
 
-defmethod('getName', self => car(self)); // ('SimpleCard', cons('getName', self => car(self)), l())
+defmethod('getName', self => car(self));
 
-defmethod('damage', (self, health) => cdr(self));
+defmethod('damage', self => cdr(self));
 
 // END
