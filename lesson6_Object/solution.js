@@ -14,8 +14,6 @@ const run = (player1, player2, cards, customRandom) => {
     // BEGIN (write your solution here)
     const cardName = card('getName');
     const damage = card('damage', health2);
-    console.log(`cardName ${cardName}`);
-    console.log(`damage ${damage}`);
     // END
     const newHealth = health2 - damage;
 
